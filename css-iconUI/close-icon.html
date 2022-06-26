@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .close.icon{
+            color: #000;
+            position: absolute;
+            margin-top: 0;
+            margin-left: 0;
+            width: 21px;
+            width: 21px;
+        }
+        .close.icon:before{
+            content: "";
+            position: absolute;
+            top: 10px;
+            width: 21px;
+            height: 1px;
+            background-color: currentColor;
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        .close.icon::after{
+            content: "";
+            position: absolute;
+            top: 10px;
+            width: 21px;
+            height: 1px;
+            background-color: currentColor;
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="close icon"></div>
+</body>
+</html>
