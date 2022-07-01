@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .trash.icon {
+            color: #000;
+            position: absolute;
+            margin-left: 5px;
+            margin-top: 7px;
+            width: 9px;
+            height: 10px;
+            border-left: 1px solid currentColor;
+            border-right: 1px solid currentColor;
+            border-bottom: 1px solid currentColor;
+            border-radius: 0 0 2px 2px;
+        }
+        .trash.icon:before{
+            content: "";
+            position: absolute;
+            top: -2px;
+            left: -4px;
+            width: 17px;
+            height: 1px;
+            background-color: currentColor;
+        }
+        .trash.icon:after{
+            content: "";
+            position: absolute;
+            top: -5px;
+            left: 0px;
+            width: 7px;
+            height: 2px;
+            border-left: 1px solid currentColor;
+            border-right: 1px solid currentColor;
+            border-top: 1px solid currentColor;
+            border-radius: 4px 4px 0 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="trash icon" ></div>
+</body>
+</html>
