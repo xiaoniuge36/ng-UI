@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map.icon{
+            color: #000;
+            position: absolute;
+            margin-left: 8px;
+            margin-top: 4px;
+            width: 4px;
+            height: 10px;
+            border-radius: 1px;
+            border: solid 1px currentColor;
+            -webkit-transform: skewY(20deg);
+            transform: skewY(20deg);
+        }
+        .map.icon:before{
+            content: '';
+            position: absolute;
+            left: -6px;
+            width: 4px;
+            height: 10px;
+            top: 1px;
+            border-radius: 1px;
+            border: solid 1px currentColor;
+            -webkit-transform: skewY(-40deg);
+            transform: skewY(-40deg);
+        }
+        .map.icon:after{
+            content: '';
+            position: absolute;
+            left: 4px;
+            width: 4px;
+            height: 10px;
+            top: -3px;
+            border-radius: 1px;
+            border: solid 1px currentColor;
+            -webkit-transform: skewY(-40deg);
+            transform: skewY(-40deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="map icon"></div>
+</body>
+</html>
