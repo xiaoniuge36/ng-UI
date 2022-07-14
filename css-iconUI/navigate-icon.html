@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navigate.icon {
+            color: #000;
+            position: absolute;
+            margin-left: 6px;
+            margin-top: -1px;
+            width: 14px;
+            height: 18px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+        }
+
+        .navigate.icon:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -17px;
+            width: 0;
+            height: 0;
+            border-top: solid 18px transparent;
+            border-bottom: solid 18px currentColor;
+            border-left: solid 7px transparent;
+            border-right: solid 7px transparent;
+        }
+
+        .navigate.icon:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 9px;
+            width: 0;
+            height: 0;
+            color: white;
+            border-top: solid 5px transparent;
+            border-bottom: solid 5px currentColor;
+            border-left: solid 7px transparent;
+            border-right: solid 7px transparent;
+        }
+
+        .navigate.icon i {
+            position: absolute;
+            width: 10px;
+            height: 14px;
+            left: 2px;
+            top: 3px;
+        }
+
+        .navigate.icon i:before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: -14px;
+            width: 0;
+            height: 0;
+            color: white;
+            border-top: solid 14px transparent;
+            border-bottom: solid 14px currentColor;
+            border-left: solid 5px transparent;
+            border-right: solid 5px transparent;
+        }
+
+        .navigate.icon i:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 6px;
+            width: 0;
+            height: 0;
+            border-top: solid 4px transparent;
+            border-bottom: solid 4px currentColor;
+            border-left: solid 5px transparent;
+            border-right: solid 5px transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigate icon"><i></i></div>
+</body>
+
+</html>
